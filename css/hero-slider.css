@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #2c343b;
-  background-color: #f2f2f2;
+  background-color: #E7ECF3;
 }
 
 a {
@@ -211,13 +211,14 @@ Single slide style
   background-repeat: no-repeat;
 }
 .cd-hero-slider li:first-of-type {
-  background-image: url(../img/candidato_2.jpeg);
+  background-image: url(../img/slider_3.png);
+
 }
 .cd-hero-slider li:nth-of-type(2) {
-  background-image: url(../img/candidato_3.jpeg);
+  background-image: url(../img/slider_2.jpg);
 }
 .cd-hero-slider li:nth-of-type(3) {
-  background-image: url(../img/slide_03.jpg);
+  background-image: url(../img/slider_1.jpg);
 }
 .cd-hero-slider .cd-full-width,
 .cd-hero-slider .cd-half-width {

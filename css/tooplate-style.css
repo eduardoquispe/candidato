@@ -9,8 +9,9 @@ http://www.tooplate.com/view/2089-meteor
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', arial, sans-serif;
+    font-family: 'Roboto Slab', serif'Open Sans', arial, sans-serif;
 }
+
 ul {
 	list-style: none;
 }
@@ -62,9 +63,11 @@ p {
 .section-heading .line-dec {
 	width: 60px;
 	height: 3px;
-	background-color: #121212;
+	background-color: #0e12f5;
 	margin: 0 auto;
 }
+
+/*HEADER*/
 .header {
     position: fixed;
     top: 0;
@@ -74,10 +77,13 @@ p {
     z-index: 10000;
     transition: all 0.2s ease-in-out;
     height: 80px;
-    background-color:transparent;  
-    
+    background-color:transparent;
     text-align: center;
     line-height: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
@@ -91,33 +97,58 @@ p {
 
 .navbar-nav>li>a {
 	color: #fff!important;
-	font-size: 13px;
+	font-size: 1.5rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-shadow: none;
 	line-height: 80px;
-	padding: 0px;
+	padding: 0 10px;
+	display: inline-block;
 	letter-spacing: 0.5px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 }
 
 .navbar-nav>li {
-	margin-left: 45px;
+	
+	padding: 0,20px,0,20px;
+}
+.header.active .navbar-nav>li{
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 }
 
 .header.active .navbar-nav>li>a {
-	font-size: 13px;
+	
+	font-size: 1.8rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-shadow: none;
-	color: #121212!important;
+	color: #fff!important;
+}
+.header.active .navbar-nav>li:hover {
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-shadow: none;
+	background: rgba(243, 102, 8, 0.788) !important;
 }
 
 .header.active {
-    background-color: rgba(250, 250, 250, 0.98);
+
+    background-color: rgba(2, 3, 59, 0.98);
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
+
+
 .navbar-brand .logo{
 	margin-top: 22px;
 	background-image: url(../img/white_logo.png);
@@ -160,7 +191,6 @@ p {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background-color: #a2cf8d;
 }
-bootstrap.min.css:5
 .navbar-toggle {
     position: relative;
     float: right;
@@ -226,14 +256,16 @@ ul.cd-hero-slider {
 /* WHAT WE DO */
 
 #about {
-	background-color: #f4f4f4;
+	background-color: #E7ECF3;
 	padding: 80px 0px;
 }
 
 #about .section-heading {
 	margin-bottom: 60px;
 }
-
+#about .section-heading h4{
+	font-size: 4rem;
+}
 .service-item {
 	cursor: pointer;
 	background-color: #fff;
@@ -244,7 +276,7 @@ ul.cd-hero-slider {
 }
 
 .service-item:hover {
-	background-color: #a2cf8d;
+	background-color: #2E6BA7;
 }
 
 .service-item h4 {
@@ -309,11 +341,12 @@ ul.cd-hero-slider {
 
 
 #what-we-do {
-	background-image: url(../img/what-we-do-bg.png);
+	/*background-image: url(../img/what-we-do-bg.png);*/
+	background: #fff;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 80px 0px;
+	/*padding: 80px 0px;*/
 	color: #fff;
 }
 
@@ -323,16 +356,26 @@ ul.cd-hero-slider {
 }
 
 #what-we-do h4 {
-	font-size: 24px;
+	font-size: 5em;
 	font-weight: 700;
+	color: #CC0A01;
 	letter-spacing: 0.5px;
-	line-height: 30px;
+	line-height: 6rem;
+	margin-bottom: 25px;
+}
+#what-we-do h4 span{
+	font-size: 6rem;
+	font-weight: 700;
+	color: #00295F;
+	letter-spacing: 0.5px;
 	margin-bottom: 25px;
 }
 
 #what-we-do p {
+	font-size: 3rem;
+	line-height: 3rem;
 	margin-bottom: 30px;
-	color: #fff;
+	color: #333333;
 }
 
 #what-we-do ul li {
@@ -340,8 +383,38 @@ ul.cd-hero-slider {
 	margin-right: 15px;
 	margin-bottom: 15px;
 }
+#what-we-do .col-md-6.texto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media (max-width: 767px){
+	#what-we-do h4 {
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #CC0A01;
+	letter-spacing: 0.5px;
+	line-height: 2.5rem;
+	margin-bottom: 25px;
+	}
+	#what-we-do h4 span{
+	font-size: 2.3rem;
+	font-weight: 700;
+	color: #00295F;
+	letter-spacing: 0.5px;
+	margin-bottom: 25px;
+	}
+	#what-we-do p {
+	font-size: 1.8rem;
+	line-height: 2rem;
+	margin-bottom: 30px;
+	color: #333333;
 
-
+	}
+	#what-we-do .right-image{
+		margin-top: 0 !important;
+	}
+}
 
 /* PORTFOLIO */
 
@@ -575,9 +648,15 @@ ul.cd-hero-slider {
 	width: 100%;
 	background-size: cover;
 }
-
-#contact .map img {
-	width: 100%;
+#contact form{
+	width: 100% !important;
+}
+#contact.page-section{
+	padding: 0;
+}
+#contact .map {
+	width: 90%;
+	height: 500px;
 	overflow: hidden;
 }
 
@@ -630,6 +709,11 @@ ul.cd-hero-slider {
 	transition: all 0.3s;
 }
 
+@media (max-width: 767px){
+	.img-fluid.map.pillaca_contacto{
+		display: none !important;
+	}
+}
 
 /* FOOTER */
 
