@@ -1059,3 +1059,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 	
 }
+
+#SL_balloon_obj{
+	display: none !important;
+	visibility: hidden !important;
+}
