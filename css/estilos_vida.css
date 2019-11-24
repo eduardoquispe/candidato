@@ -4,10 +4,6 @@
 	box-sizing: border-box;
 }
 
-body{
-	background: #E0E4E5;
-	font-family: 'Open Sans', sans-serif;
-}
 
 .wrap{
 	max-width: 1100px;

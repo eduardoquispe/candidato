@@ -16,7 +16,6 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #2c343b;
-  background-color: #E7ECF3;
 }
 
 a {
@@ -47,7 +46,7 @@ Main Components
 @media only screen and (min-width: 768px) {
   .cd-header {
     height: 70px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.185);
   }
 }
 
