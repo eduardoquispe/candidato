@@ -12,6 +12,7 @@ img{
 
 body{
 	overflow-x: hidden;
+	overflow-y: scroll;
 	background: #E2E2E2;
 	font-family: "Lato";
 }

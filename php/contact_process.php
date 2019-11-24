@@ -14,9 +14,9 @@ $message = $_POST['message'];
 $destinatario = 'eduardoquispe344@gmail.com';
 $asunto = 'Nueva propuesta de '.$email;
 
-$carta = "De: {$name} \n";
-$carta .= "Correo: {$email}";
-$carta .= "Mensaje: {$message}";
+$carta = "De: {$name} " ;
+$carta .= "Correo: {$email} \n";
+$carta .= "Mensaje: {$message} \n";
 /*
 $respuesta= mail(destinatario, $asunto, $carta);
 
@@ -37,8 +37,8 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('eduardoquispe344@gmail.com', 'Eduardo');
-    $mail->addAddress('eduardoquispe344@gmail.com', 'Eduardo');     // Add a recipient
+    $mail->setFrom('eduardoquispe344@gmail.com', 'Nueva Propuesta');
+    $mail->addAddress('marciahuancahuari@gmail.com', 'Marcia');     // Add a recipient
     
 
       // Optional name
@@ -46,8 +46,8 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $destinatario;
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-
+    $mail->Body    = $carta;
+  
     $mail->send();
     $estado = array('estado'=> true);
     echo json_encode($estado);
