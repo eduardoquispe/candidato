@@ -168,11 +168,12 @@ p {
 #main-nav {
 	background-color: transparent;
 	background-image: none!important;
-	width: 100%;
-	display: flex;
-	flex-direction: column-reverse !important;
+	width: 70% !important;
+	float: right;
+	margin-right: -80px !important;
 	
 }
+
 .header .navbar-brand {
     font-weight: 900;
 }
@@ -669,7 +670,7 @@ ul.cd-hero-slider {
 	margin-bottom: 60px;
 }
 
-#contact {
+#contact, #enlace_contact  {
 	background-image: url(../img/congreso-peru.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -679,13 +680,33 @@ ul.cd-hero-slider {
 	position: relative;
 	
 }
-
+#enlace_contact  {
+	height: 900px;
+	max-height:280px !important;
+	margin-bottom: 50px;
+	background-image: url(../img/banner_enlace_contact.jpg);
+	background-repeat: no-repeat;
+	background-attachment: unset;
+	background-size: cover;
+	position: relative;
+}
+@media (max-width: 1000px){
+	#enlace_contact  {
+		background: rgb(255, 166, 0);
+	}
+}
 #contact::before{
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	
+	background: rgba(0, 14, 143, 0.904);
+}
+#enlace_contact::before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.37);
 }
 #contact form{
@@ -791,7 +812,7 @@ ul.cd-hero-slider {
 /* FOOTER */
 
 footer {
-	background-color: #202628;
+	background-color: #07083F;
 	padding: 20px;
 }
 
@@ -1061,6 +1082,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	}
 	footer {
 		text-align: center;
+		background: #07083F;
 	}
 	
 }
