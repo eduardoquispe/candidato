@@ -9,11 +9,9 @@ form.addEventListener('submit', e => {
         method: 'POST',
         body: datos
     })
-    .then(respuesta => {
-        
-        return respuesta.json()})
+    .then(respuesta =>respuesta.json())
     .then(data => {
-        console.log(data)
+       
         if(data.estado){
             console.log("Enviado correctamente")
             estado.classList.add("bg-danger")
