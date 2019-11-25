@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'phpMailer/Exception.php';
-require 'phpMailer/PHPMailer.php';
-require 'phpMailer/SMTP.php';
+require './phpMailer/Exception.php';
+require './phpMailer/PHPMailer.php';
+require './phpMailer/SMTP.php';
 
 
 $name = $_POST['name'];
